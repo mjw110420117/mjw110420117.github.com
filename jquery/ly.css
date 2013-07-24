@@ -1,0 +1,40 @@
+#ly
+{
+	font-family: cursive;
+	color: rgba(248,24,219,1);
+	display: none;
+	position: absolute;
+	font-size: 50px;
+}
+#word-spacing: 
+{
+	font-family: cursive;
+	color: red;
+	position: float;
+	float:top;
+	background-color: gray;
+}
+#love
+{
+	width: 1200px;
+	height:2000px;
+}
+#sky
+{
+	position: absolute;
+	top:0px;
+	left: 0px;
+	height:4000;
+	background-color: black;
+}
+body
+{
+	margin:0;
+	padding:0;
+	background:#ffe;
+	overflow:auto
+}
+#flower1
+{
+	left:0;
+}
