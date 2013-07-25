@@ -15,30 +15,47 @@ var x2 = 0;
 var y2 = 0;
 
 var xd = ($('#flower1').width()-1141)/2;//I love you的x位移
-var yd = 400;
+var yd = 200;//
 
 function init()
 {
-    $("#love").css({"position":"absolute","width":$(window).width()});
-    $("#flower1").css("width",$(window).width());
+    $("#love").css({"width":Math.max($(window).width(),1100)});//"position":"absolute",
+    $("#flower1").css("width",$('#love').width());
+    //$("#flower1").css("height",$('#love').height());
+    $("#flower1").css("padding-top","50px");
+    $("#copyright").css("width",Math.max($(window).width(),1100));
+    $("#copyright").css("top",$("#flower1").height());
 }
 
 function PositionLy()
 {
     $("#ly").css("position","absolute");
     $("#ly").css("top",$('#flower1').height()/4);
-    $("#ly").css("left",$('#flower1').width()/3.6);
+    $("#ly").css("left",$('#flower1').width()/3.7);
+    $('#ly').css("width",Math.max($(window).width()/9,122));
+   // $('#ly').css("height",$(window).height()/8);
+    //$("#ly").css("font-size",$(window).height()*$(window).width()/17500);
+}
+
+function PositionWords()
+{
+    $("#words").css("width",Math.max($(window).width(),1100));
+    
 }
 function Showly()
 {
     $('#ly').fadeIn(3000);
 }
+function fadewords()
+{
+    $('#words').fadeOut(3000);
+}
 //得到随机颜色
 function getRandomColor()
 {
-    var r = Math.floor(Math.random()*(255-180)+180);
-    var g = Math.floor(Math.random()*(180-130)+130);
-    var b = Math.floor(Math.random()*(230-180)+180);
+    var r = Math.floor(Math.random()*(255-128)+128);
+    var g = Math.floor(Math.random()*(200-128)+128);
+    var b = Math.floor(Math.random()*(128));
     var a = Math.random();
     if(Math.abs(r-g)<5&&Math.abs(g-b)<5&&Math.abs(b-a)<5)
     {
@@ -330,9 +347,12 @@ function typewriter(t)
                 d.html(c.substring(0,b)+(b&1?"_":""));
                 if(b>=c.length)
                 {
-                    clearInterval(e)
+                    clearInterval(e);
+                    fadewords();
+                    $("#flower1").css("background-color","#ffe");
+                    startAnimation();
                 }
-            },75)
+            },150)
 } 
 
 //画点
@@ -340,7 +360,7 @@ var canvas1 = document.getElementById("flower1");
 var cxt1 = canvas1.getContext('2d');
 function drawPoint()
 {
-    var rxing = $(window).width()/1583*0.5;
+    var rxing = $(window).width()/1583*0.6;
 
     var x = Math.random()*canvas1.width;
     var y = Math.random()*canvas1.height;
