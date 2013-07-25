@@ -30,7 +30,7 @@ function init()
 function PositionLy()
 {
     $("#ly").css("position","absolute");
-    $("#ly").css("top",$('#flower1').height()/4);
+    $("#ly").css("top",$('#flower1').height()/3.6);
     $("#ly").css("left",$('#flower1').width()/3.7);
     $('#ly').css("width",Math.max($(window).width()/9,122));
    // $('#ly').css("height",$(window).height()/8);
