@@ -11,7 +11,7 @@
 	Your browser does not support this audio format.
 	</audio>
 	<div id = "love" >
-		<canvas id = "background" width = "1200px" height = "1000px" style = "position:absolute;background-color:#ffe"></canvas>
+		<canvas id = "background" width = "1200px" height = "1000px" style = "position:absolute;background-color:#ffe;display:none;"></canvas>
 		<canvas id = "flower1" width="1200px" height="1000px" style = "position:absolute;background-color:black;"></canvas>
 		<div id = "ly" style = "width: 100px; height: 50px;">
 				刘妍
@@ -35,11 +35,11 @@
 		<span class = "comment">我会给她最大的快乐</span><br/>
 		<span class = "comment">我会给她拍很多很多漂亮照片，只要她喜欢</span><br/>
 		<span class = "comment">我会陪她逛很多很多商店，直到她累为止</span><br/>
-		<span class = "comment">我会耐心的陪她聊天，直到她想休息为止</span><br/>
+		<span class = "comment">我会无条件的陪她聊天，直到她想休息为止</span><br/>
 		<span class = "comment">她生气了，我会逗她开心，虽然我很笨</span><br/>
 		<span class = "comment">她想玩了，我会陪她一起去玩</span><br/>
 		<span class = "comment">她想学习了，我会陪她一起上自习</span><br/>
-		<span class = "comment">我要努力在未来的一天带她去中国其他地方、去全世界游玩，只要她愿意</span><br/>
+		<span class = "comment">我要努力在未来的一天带她去中国其他地方、去世界游玩，只要她愿意</span><br/>
 		<span class = "comment">我会更加锻炼自己的身体，那么等我们老了之后还可以更好地照顾她</span><br/>
 		<span class = "comment">我会更加努力的奋斗，给她最好的未来</span><br/>
 		<span class = "comment">有人说完美的人生是</span><br/>
@@ -68,17 +68,18 @@ if (!document.createElement('canvas').getContext) {
 else{
 	var myAud = document.getElementById('myaudio');
 	myAud.volume = 0.5;
-	init_background();
-	init();
+	//init_background();
+	First_init();
 	fullsky();
-	PositionLy();
-	PositionWords();
+	//PositionLy();
+	//PositionWords();
 	typewriter("#words");
 	$(window).resize(function(){
-	init_background();
-	init();
-	PositionLy();
-	PositionWords();
+	//init_background();
+	First_init();
+	Second_init();
+	//PositionLy();
+	//PositionWords();
 });
 }
 </script>
