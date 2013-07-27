@@ -365,6 +365,7 @@ function typewriter(t)
                     fadeBackground();
                     ShowBackground();
                     init_background();
+                    PositionLy();
                     startAnimation();
                 }
             },150)
