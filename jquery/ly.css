@@ -10,7 +10,7 @@
 #love
 {
 	width: 1200px;
-	height:1000px;
+	height:1100px;
 }
 #sky
 {
@@ -33,7 +33,8 @@ body
 }
 #words
 {
-	padding-top: 50px;
+	padding-top: 25px;
+	margin: 0;
 	text-align: center;
 	font-family: cursive;
 	position: absolute;

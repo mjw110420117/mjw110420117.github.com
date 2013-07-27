@@ -5,7 +5,7 @@ var r = 20;
 var radian;//弧度   
 var i;
 var radianDecrement;//弧度增量   
-var time = 50;//每个点之间的时间间隔   
+var time = 10;//每个点之间的时间间隔   
 var intervalId = new Array();   
 var num = 150;//分割为 360 个点   
 var startRadian = Math.PI;
@@ -17,16 +17,30 @@ var y2 = 0;
 var xd = ($('#love').width()-1141)/2;//I love you的x位移
 var yd = 200;//
 
-function init()
+function First_init()
 {
-    $("#love").css({"width":Math.max($(window).width(),1100)});
-    $("#love").css({"height":$('#background').height()});
-    $("#flower1").css("width",$('#love').width());
+    $("#flower1").css("width",Math.max($(window).width(),1100));
     $("#flower1").css("height",$('#words').height());
+    $("#love").css({"width":Math.max($(window).width(),1100)});
+    $("#love").css({"height":$('#flower1').height()});
+    $("#words").css("width",Math.max($(window).width(),1100));
     $("#copyright").css("width",Math.max($(window).width(),1100));
     $("#copyright").css("top",$("#flower1").height());
+    
 }
 
+function Second_init()
+{
+    $("#background").css("width",$('#love').width());
+    $("#ly").css("top",$('#background').height()/3.3);
+    $("#ly").css("left",$('#background').width()/3.8);
+    $("#ly").css("position","absolute");
+    $('#ly').css("width",Math.max($(window).width()/9,122));
+    $("#copyright").css("width",Math.max($(window).width(),1100));
+    $("#copyright").css("top",$("#flower1").height());
+    $("#copyright").css("top",$("#background").height());
+}
+/*
 function init_background()
 {
   $("#background").css("width",$('#love').width());
@@ -45,6 +59,7 @@ function PositionWords()
     $("#words").css("width",Math.max($(window).width(),1100));
     
 }
+*/
 function Showly()
 {
     $('#ly').fadeIn(3000);
@@ -364,8 +379,7 @@ function typewriter(t)
                     fadewords();
                     fadeBackground();
                     ShowBackground();
-                    init_background();
-                    PositionLy();
+                    Second_init();
                     startAnimation();
                 }
             },150)
