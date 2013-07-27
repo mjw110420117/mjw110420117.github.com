@@ -5,7 +5,7 @@ var r = 20;
 var radian;//弧度   
 var i;
 var radianDecrement;//弧度增量   
-var time = 10;//每个点之间的时间间隔   
+var time = 50;//每个点之间的时间间隔   
 var intervalId = new Array();   
 var num = 150;//分割为 360 个点   
 var startRadian = Math.PI;
