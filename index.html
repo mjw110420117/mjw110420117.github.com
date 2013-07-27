@@ -3,58 +3,60 @@
 <html>
 <head>
 <title>wait for my love</title>
-<link href = "jquery/ly.css" type = "text/css" rel = "stylesheet">
+<link href = "D://jquery/ly.css" type = "text/css" rel = "stylesheet">
 </head>
 <body>
-	<audio autoplay="autoplay" loop = "loop">
+	<audio id = "myaudio" autoplay="autoplay" loop = "loop">
   	<source src="D://jquery/love.mp3" type="audio/mp3" />
 	Your browser does not support this audio format.
 	</audio>
 	<div id = "love" >
-		<canvas id = "flower1" width="1200px" height="1000px" style = "position:absolute;background-color:black;"></canvas><!-->background-color:black;<!-->
+		<canvas id = "background" width = "1200px" height = "1000px" style = "position:absolute;background-color:#ffe"></canvas>
+		<canvas id = "flower1" width="1200px" height="1000px" style = "position:absolute;background-color:black;"></canvas>
 		<div id = "ly" style = "width: 100px; height: 50px;">
 				刘妍
 		</div>
 		<div id = "words">
-		<span>刘妍</span><br/>
-		<span>这是我为你写的也是为自己写的一个小小的网站</span><br/>
-		<span>一直期待着一份轰轰烈烈爱情</span><br/>
-		<span>一直在等待着、寻找着属于自己的那一个</span><br/>
-		<span>但是在我的想象里大学应该充满着热血的奋斗</span><br/>
-		<span>少一些儿女情长的矫情</span><br/>
-		<span>就这样一直对爱情保持着观望</span><br/>
-		<span>如果自己没有将一份爱情进行到底的勇气和信心</span><br/>
-		<span>那么又何必去着急的进入彼此的生活去伤害彼此的感情呢</span><br/>
-		<span>可是几个月前，我遇到了你</span><br/>
-		<span>单纯、可爱、爱笑的你</span><br/>
-		<span>让每一个遇到你的人都不由自主的喜欢</span><br/>
-		<span>试想如果在自己的生活中有这么一个人</span><br/>
-		<span>那生活中会增加多少欢乐,增加多少精彩</span><br/>
-		<span>将近半年的时间已经过去了</span><br/>
-		<span>如果我不说出内心的话，可能相处的时间就不会太多</span><br/>
-		<span>这几天里</span><br/>
-		<span>在写这个网站的同时</span><br/>
-		<span>我也不断地问着自己</span><br/>
-		<span>我是不是真心爱刘妍</span><br/>
-		<span>我是不是已经决定了为了她不怕失败，坚持到底</span><br/>
-		<span>我是不是决心要努力奋斗，给她最好的未来</span><br/>
-		<span>我是不是要努力让她快乐</span><br/>
-		<span>我的回答是：是！</span><br/>
-		<span>有些话只有写出来才能表达出来</span><br/>
-		<span>其实能在最美的年华里遇到你就是一种幸福</span><br/>
-		<span>但是既然遇见，就要珍惜</span><br/>
-		<span>只有珍惜了，才是一种缘分</span><br/>
-		<span>所以</span><br/>
-		<span>我不是一个矫情的人</span><br/>
-		<span>却说了那么多矫情的话</span><br/>
-		<span>其实我想说的就是一句话</span><br/>
+		<span class = "comment">刘妍同学</span><br/>
+		<span class = "comment">这是我给你写的也是给我自己写的一个小站</span><br/>
+		<span class = "comment">它名字叫<span>“wait for my love”</span></span><br/>
+		<span class = "comment">等我所爱的人给我一个回音</span><br/>
+		<span class = "comment">而我想告诉你我所爱的人的名字就是</span><br/>
+		<span class = "name">刘妍</span><br/>
+		<span class = "comment">她是一个<span>单纯，活泼，可爱，爱笑</span>的女孩</span><br/>
+		<span class = "comment">在我眼中她还是一个有些粗心，喜欢照自己大头像的女孩</span><br/>
+		<span class = "comment">但这都是我喜欢她的理由</span><br/>
+		<span class = "comment">假如我可以有这样一个女友的话</span><br/>
+		<span class = "comment">那么我都无法想象我的生活将会是多么的美丽！</span><br/>
+		<span class = "comment">我不是一个非常帅的男生</span><br/>
+		<span class = "comment">我也没有一个让我衣食无忧的老爸</span><br/>
+		<span class = "comment">甚至现在的我还有些贫困</span><br/>
+		<span class = "comment">但是我保证</span><br/>
+		<span class = "comment">我会给她最大的快乐</span><br/>
+		<span class = "comment">我会给她拍很多很多漂亮照片，只要她喜欢</span><br/>
+		<span class = "comment">我会陪她逛很多很多商店，直到她累为止</span><br/>
+		<span class = "comment">我会耐心地陪她聊天，直到她想休息为止</span><br/>
+		<span class = "comment">她生气了，我会逗她开心，虽然我很笨</span><br/>
+		<span class = "comment">她想玩了，我会陪她一起去玩</span><br/>
+		<span class = "comment">她想学习了，我会陪她一起上自习</span><br/>
+		<span class = "comment">我要努力在未来的一天带她去中国其他地方、去全世界游玩，只要她愿意</span><br/>
+		<span class = "comment">我会更加锻炼自己的身体，那么等我们老了之后还可以更好地照顾她</span><br/>
+		<span class = "comment">我会更加努力的奋斗，给她最好的未来</span><br/>
+		<span class = "comment">有人说完美的人生是</span><br/>
+		<span class = "comment1">刚开始的一见钟情</span><br/>
+		<span class = "comment1">后来两个人的两情相悦</span><br/>
+		<span class = "comment1">到最后的白头偕老</span><br/>
+		<span class = "comment">不知道我能不能幸运地拥有</span><br/>
+		<span class = "comment">我不是一个矫情的人</span><br/>
+		<span class = "comment">却说了那么多矫情的话</span><br/>
+		<span class = "comment">其实我想说的就是一句话</span><br/>
 		</div>
 		<div id="copyright" style = "color:blue;position:absolute;text-align:center;">
-			Copyright © 2013 <a href="http://weibo.com/u/2638094495">MyselfDancing</a>
+			Copyright © 2013 <a href="http://weibo.com/MyselfDancing">MyselfDancing(mjw)</a>
 		</div>
 	</div>
-<script type = "text/javascript" src = "jquery/jquery.js"></script>
-<script type="text/javascript" src="jquery/newpetal.js"></script>
+<script type = "text/javascript" src = "D://jquery/jquery.js"></script>
+<script type="text/javascript" src="D://jquery/newpetal.js"></script>
 <script type="text/javascript">
 if (!document.createElement('canvas').getContext) {
 			var msg = document.createElement("div");
@@ -64,13 +66,16 @@ if (!document.createElement('canvas').getContext) {
 		    document.execCommand("stop");
 		}
 else{
+	var myAud = document.getElementById('myaudio');
+	myAud.volume = 0.5;
+	init_background();
 	init();
 	fullsky();
 	PositionLy();
 	PositionWords();
 	typewriter("#words");
-//startAnimation();
 	$(window).resize(function(){
+	init_background();
 	init();
 	PositionLy();
 	PositionWords();

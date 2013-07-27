@@ -7,14 +7,6 @@
 	font-size: 50px;
 	text-align: center;
 }
-#word-spacing: 
-{
-	font-family: cursive;
-	color: red;
-	position: float;
-	float:top;
-	background-color: gray;
-}
 #love
 {
 	width: 1200px;
@@ -41,15 +33,26 @@ body
 }
 #words
 {
+	padding-top: 50px;
 	text-align: center;
 	font-family: cursive;
 	position: absolute;
-	top:50px;
 	color: rgba(104,245,104,1);
-	height: 1000px;
+	height: 1100px;
 	font-size: 20px;
 }
-#copyright
+#words .comment
 {
 
+}
+#words .name
+{
+	font-family: Times;
+	font-weight:bold;
+	font-size: 2.5em;
+	color:rgba(248,24,219,1);
+}
+#words .comment1
+{
+	font-style: italic;
 }

@@ -1,5 +1,5 @@
-var canvas = document.getElementById("flower1");
-var cxt = canvas.getContext('2d');
+var canvas;
+var cxt;
 var r1 = 15;
 var r = 20;   
 var radian;//弧度   
@@ -14,27 +14,30 @@ isOver = true;
 var x2 = 0;
 var y2 = 0;
 
-var xd = ($('#flower1').width()-1141)/2;//I love you的x位移
+var xd = ($('#love').width()-1141)/2;//I love you的x位移
 var yd = 200;//
 
 function init()
 {
-    $("#love").css({"width":Math.max($(window).width(),1100)});//"position":"absolute",
+    $("#love").css({"width":Math.max($(window).width(),1100)});
+    $("#love").css({"height":$('#background').height()});
     $("#flower1").css("width",$('#love').width());
-    //$("#flower1").css("height",$('#love').height());
-    $("#flower1").css("padding-top","50px");
+    $("#flower1").css("height",$('#words').height());
     $("#copyright").css("width",Math.max($(window).width(),1100));
     $("#copyright").css("top",$("#flower1").height());
 }
 
+function init_background()
+{
+  $("#background").css("width",$('#love').width());
+ 
+}
 function PositionLy()
 {
+    $("#ly").css("top",$('#background').height()/3.3);
+    $("#ly").css("left",$('#background').width()/3.8);
     $("#ly").css("position","absolute");
-    $("#ly").css("top",$('#flower1').height()/3.6);
-    $("#ly").css("left",$('#flower1').width()/3.7);
     $('#ly').css("width",Math.max($(window).width()/9,122));
-   // $('#ly').css("height",$(window).height()/8);
-    //$("#ly").css("font-size",$(window).height()*$(window).width()/17500);
 }
 
 function PositionWords()
@@ -45,6 +48,14 @@ function PositionWords()
 function Showly()
 {
     $('#ly').fadeIn(3000);
+}
+function ShowBackground()
+{
+    $('#background').fadeIn(3000);
+}
+function fadeBackground()
+{
+    $('#flower1').fadeOut(3000);
 }
 function fadewords()
 {
@@ -310,7 +321,7 @@ function drawU() {
 function paintU() {      
     //cxt.stroke();//画线
     r1 = Math.floor(Math.random()*4+8);
-    xU += 1;
+    xU += 1.2;
     yU = yd + 350 - 0.04 * Math.pow(xU- xd -1030,2);
     //cxt.lineTo(xU,yU);
     //cxt.stroke();
@@ -348,8 +359,12 @@ function typewriter(t)
                 if(b>=c.length)
                 {
                     clearInterval(e);
+                    canvas = document.getElementById("background");
+                    cxt = canvas.getContext('2d');
                     fadewords();
-                    $("#flower1").css("background-color","#ffe");
+                    fadeBackground();
+                    ShowBackground();
+                    init_background();
                     startAnimation();
                 }
             },150)
