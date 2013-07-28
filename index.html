@@ -3,11 +3,11 @@
 <html>
 <head>
 <title>wait for my love</title>
-<link href = "jquery/ly.css" type = "text/css" rel = "stylesheet">
+<link href = "D://jquery/ly.css" type = "text/css" rel = "stylesheet">
 </head>
 <body>
 	<audio id = "myaudio" autoplay="autoplay" loop = "loop">
-  	<source src="jquery/love.mp3" type="audio/mp3" />
+  	<source src="D://jquery/shudaowudayingwo.mp3" type="audio/mp3" />
 	Your browser does not support this audio format.
 	</audio>
 	<div id = "love" >
@@ -15,6 +15,9 @@
 		<canvas id = "flower1" width="1200px" height="1000px" style = "position:absolute;background-color:black;"></canvas>
 		<div id = "ly" style = "width: 100px; height: 50px;">
 				刘妍
+		</div>
+		<div id = "mjw" style = "width: 1000px; height:50px;">
+				 ———— Coder majianwei of HIT(WH)
 		</div>
 		<div id = "words">
 		<span class = "comment">刘妍同学</span><br/>
@@ -29,8 +32,8 @@
 		<span class = "comment">假如我可以有这样一个女友的话</span><br/>
 		<span class = "comment">那么我都无法想象我的生活将会是多么的美丽！</span><br/>
 		<span class = "comment">我不是一个非常帅的男生</span><br/>
-		<span class = "comment">我也没有一个让我衣食无忧的老爸</span><br/>
-		<span class = "comment">甚至现在的我还有些贫困</span><br/>
+		<span class = "comment">我也没有一个让自己衣食无忧的老爸</span><br/>
+		<span class = "comment">甚至现在的我一无所有</span><br/>
 		<span class = "comment">但是我保证</span><br/>
 		<span class = "comment">我会给她最大的快乐</span><br/>
 		<span class = "comment">我会给她拍很多很多漂亮照片，只要她喜欢</span><br/>
@@ -55,8 +58,8 @@
 			Copyright © 2013 <a href="http://weibo.com/MyselfDancing">MyselfDancing(mjw)</a>
 		</div>
 	</div>
-<script type = "text/javascript" src = "jquery/jquery.js"></script>
-<script type="text/javascript" src="jquery/newpetal.js"></script>
+<script type = "text/javascript" src = "D://jquery/jquery.js"></script>
+<script type="text/javascript" src="D://jquery/newpetal.js"></script>
 <script type="text/javascript">
 if (!document.createElement('canvas').getContext) {
 			var msg = document.createElement("div");
@@ -67,19 +70,12 @@ if (!document.createElement('canvas').getContext) {
 		}
 else{
 	var myAud = document.getElementById('myaudio');
-	myAud.volume = 0.5;
-	//init_background();
+	myAud.volume = 0.6;
 	First_init();
 	fullsky();
-	//PositionLy();
-	//PositionWords();
 	typewriter("#words");
 	$(window).resize(function(){
-	//init_background();
-	First_init();
-	Second_init();
-	//PositionLy();
-	//PositionWords();
+		location.replace(location)
 });
 }
 </script>

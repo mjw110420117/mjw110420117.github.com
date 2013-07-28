@@ -7,10 +7,19 @@
 	font-size: 50px;
 	text-align: center;
 }
+#mjw
+{
+	font-family: cursive;
+	color: rgba(248,24,219,1);
+	display: none;
+	position: absolute;
+	font-size: 25px;
+	text-align: center;
+}
 #love
 {
 	width: 1200px;
-	height:1100px;
+	height:1800px;
 }
 #sky
 {
@@ -56,4 +65,7 @@ body
 #words .comment1
 {
 	font-style: italic;
+}
+#background
+{
 }

@@ -36,6 +36,11 @@ function Second_init()
     $("#ly").css("left",$('#background').width()/3.8);
     $("#ly").css("position","absolute");
     $('#ly').css("width",Math.max($(window).width()/9,122));
+    $("#mjw").css("top",$('#background').height()/1.4);
+    $("#mjw").css("left",$('#background').width()/2);
+    $("#mjw").css("position","absolute");
+    $('#mjw').css("width",Math.max($(window).width()/2.5,250));
+
     $("#copyright").css("width",Math.max($(window).width(),1100));
     $("#copyright").css("top",$("#flower1").height());
     $("#copyright").css("top",$("#background").height());
@@ -63,6 +68,10 @@ function PositionWords()
 function Showly()
 {
     $('#ly').fadeIn(3000);
+}
+function ShowMjw()
+{
+    $('#mjw').fadeIn(3000);
 }
 function ShowBackground()
 {
@@ -348,7 +357,8 @@ function paintU() {
     } 
     if(xU >= xd + 1119) {   
         clearInterval(intervalId[8]); 
-        Showly();   
+        Showly();
+        ShowMjw();  
     }   
 }
 
